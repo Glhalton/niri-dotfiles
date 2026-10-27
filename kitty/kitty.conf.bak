@@ -1,0 +1,12 @@
+# Import zsh
+shell /usr/bin/zsh
+
+# Kitty theme
+include current-theme.conf
+
+# Window config
+background_opacity 0.8
+
+# Fonts configuration
+font_family JetBrainsMono Nerd Font
+font_size 12
