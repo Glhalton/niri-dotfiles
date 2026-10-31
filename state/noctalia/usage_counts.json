@@ -1,0 +1,17 @@
+{
+  "Applications": {
+    "/usr/share/applications/brave-browser.desktop": 13,
+    "/usr/share/applications/cachyos-pi.desktop": 1,
+    "/usr/share/applications/com.microsoft.VSCode.desktop": 3,
+    "/usr/share/applications/com.shellyorg.shelly.desktop": 1,
+    "/usr/share/applications/dev.noctalia.Noctalia.desktop": 1,
+    "/usr/share/applications/discord.desktop": 3,
+    "/usr/share/applications/io.github.nirimod.desktop": 3,
+    "/usr/share/applications/kitty.desktop": 1,
+    "/usr/share/applications/nwg-look.desktop": 1,
+    "/usr/share/applications/obsidian.desktop": 1,
+    "/usr/share/applications/qt6ct.desktop": 1,
+    "/usr/share/applications/spotify-launcher.desktop": 3,
+    "/usr/share/applications/steam.desktop": 3
+  }
+}

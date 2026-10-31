@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "audio_spectrum": {
+      "label": "Reagisce all'audio"
+    },
+    "executable_path": {
+      "label": "Binario evtest alternativo"
+    },
+    "input_devices": {
+      "description": "Preferire /dev/input/by-id/*-event-* o /dev/input/by-path/*-event-*; /dev/input/eventN può cambiare dopo gli aggiornamenti del kernel o del dispositivo",
+      "label": "Dispositivi di input"
+    },
+    "rave_mode": {
+      "label": "Colori rave sul ritmo"
+    },
+    "tappy_mode": {
+      "label": "Batti sul ​​ritmo"
+    },
+    "use_mpris_filter": {
+      "label": "Reagisci solo durante la riproduzione del contenuto multimediale"
+    }
+  }
+}

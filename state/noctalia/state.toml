@@ -1,0 +1,9 @@
+[plugin_store]
+sort = "trending"
+
+[security_migrations]
+calendar_credentials_v1 = true
+
+[theme_templates]
+applied_builtin_ids = "kcolorscheme qt"
+applied_community_ids = ""
