@@ -1,0 +1,8 @@
+[stream-properties]
+Output/Audio:application.name:Brave={"channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "mute":false, "volume":1.000000}
+Output/Audio:application.name:Spotify={"mute":false, "channelMap":["UNK", "UNK"], "volume":1.000000, "channelVolumes":[1.000000, 1.000000]}
+Output/Audio:media.role:Notification={"channelMap":["UNK", "UNK"], "volume":1.000000, "channelVolumes":[1.000000, 1.000000], "mute":false}
+Input/Audio:application.name:Noctalia\sSpectrum={"channelVolumes":[1.000000, 1.000000], "mute":false, "volume":1.000000}
+Output/Audio:application.name:Chromium={"mute":false, "volume":1.000000, "channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000]}
+Output/Audio:application.name:discord={"channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "mute":false, "volume":1.000000}
+Output/Audio:application.name:Beat\sBanger={"channelMap":["FL", "FR"], "channelVolumes":[1.000000, 1.000000], "mute":false, "volume":1.000000}

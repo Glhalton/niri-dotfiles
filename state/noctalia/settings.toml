@@ -12,7 +12,6 @@ end = [
     "network",
     "battery",
     "control-center",
-    "tray",
     "session"
 ]
 margin_ends = 0
@@ -46,10 +45,21 @@ behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
     enabled = true
     timeout = 660.0
 
+[lockscreen]
+blur_intensity = 0.0
+transition = [ "fade" ]
+transition_duration = 1000
+wallpaper = "/home/glhalton/Imagens/sakuya.png"
+
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -60,7 +70,7 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     box_height = 196.0
     box_width = 810.0
     cx = 960.0
-    cy = 898.0
+    cy = 602.0
     output = "eDP-1"
     placement_height = 1080.0
     placement_width = 1920.0
@@ -84,12 +94,64 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         show_unlock_hint = true
         show_weather = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 128.0
+    box_width = 288.0
+    cx = 944.0
+    cy = 316.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        clock_style = "digital"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 1884.0
+    cy = 1048.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "button"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+        background = true
+        command = "sudo shutdown"
+        glyph = "power"
+        variant = "default"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 208.0
+    box_width = 384.0
+    cx = 960.0
+    cy = 388.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = false
+        clock_style = "digital"
+        format = "%A, %B %-d"
+        shadow = true
+
 [plugins]
 enabled = [ "thaer99ob/default-apps", "noctalia/wallhaven", "noctalia/bongocat", "yuuto/arch-updater", "tordex/processes" ]
 
 [shell]
 avatar_path = "/home/glhalton/Documentos/profile-picture/reimu.png"
 panel_anchor_bar = "default"
+
+    [shell.greeter_sync]
+    auto_sync = true
 
     [shell.launcher]
     categories = false
@@ -151,7 +213,6 @@ enabled = false
 
 [widget.media]
 art_size = 18
-hide_artist = true
 hide_when_no_media = true
 max_length = 275
 title_scroll = "always"
@@ -165,6 +226,9 @@ scale = 1.3
 
 [widget.session]
 enabled = false
+
+[widget.tray]
+scale = 1.3
 
 [widget.volume]
 scale = 1.3
